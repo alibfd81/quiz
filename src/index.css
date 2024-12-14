@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.background {
+    height: 100vh;
+    background: hsla(145, 44%, 37%, 1);
+    background: linear-gradient(90deg, hsla(145, 44%, 37%, 1) 0%, hsla(190, 53%, 56%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(145, 44%, 37%, 1) 0%, hsla(190, 53%, 56%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(145, 44%, 37%, 1) 0%, hsla(190, 53%, 56%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#348756", endColorstr="#54B6CA", GradientType=1 );
+}
+
+@layer components {
+    .textField__input {
+        @apply w-full py-3 px-4 rounded-xl text-black border border-white bg-white hover:border-blue-300 focus:border-blue-300 focus:bg-white transition-all duration-300 ease-out focus:shadow-lg focus:shadow-blue-200;
+    }
+}
