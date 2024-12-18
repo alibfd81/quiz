@@ -6,7 +6,7 @@ import TotalScore from "./TotalScore";
 function Questions({ currentQuestion, onClickNext, handlePrev }) {
     const [timeleft, setTimeLeft] = useState(() => {
         const savedTime = localStorage.getItem("timeLeft");
-        return savedTime ? JSON.parse(savedTime) : 300;
+        return savedTime ? JSON.parse(savedTime) : 20;
     });
 
     // بارگذاری پاسخ‌ها از localStorage در زمان رندر کامپوننت
